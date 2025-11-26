@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+
+    <!-- Internal CSS -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        padding: 20px;
+        margin: 0;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      form {
+        width: 350px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input,
+      textarea {
+        width: 90%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0056b3;
+      }
+
+      /* ------- Mobile Responsive CSS ------- */
+      @media (max-width: 480px) {
+        form {
+          width: 100%;
+          margin: 0;
+          padding: 15px;
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        body {
+          padding: 10px;
+        }
+
+        button {
+          font-size: 16px;
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Contact Form</h2>
+
+    <form method="POST">
+      <label>Name</label>
+      <input type="text" name="name" required />
+
+      <label>Phone</label>
+      <input type="text" name="phone" required />
+
+      <label>Email</label>
+      <input type="email" name="email" required />
+
+      <label>Message</label>
+      <textarea name="msg" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <br/>
+<button onclick="openWhatsApp()">Chat To Whatsapp</button>
+  </body>
+  <script>
+  function openWhatsApp() {
+  let phone = "6382790456";
+  let msg = "I NEED FINAL YEAR PROJECT."; 
+  let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
+  window.open(url, "_blank");
+}
+  </script>
+</html>
