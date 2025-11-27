@@ -3,207 +3,157 @@
   <head>
     <title>UTech Info</title>
     <link rel="stylesheet" href="./static/css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
   </head>
   <body>
-    <button class="whatsapp-btn" onclick="openWhatsApp()">
-      Chat To Whatsapp
-    </button>
-    <!-- HOME -->
+<button class="whatsapp-btn"  onclick="openWhatsApp()">Chat To Whatsapp</button>
+  <!-- HOME -->
 
-    <!-- ABOUT -->
+  <!-- ABOUT -->
 
-    <!-- TECHNOLOGY -->
-    <section id="tech" class="py-5">
-      <h2 class="text-center fw-bold mb-4">Technology</h2>
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="tech-card text-center p-3 shadow-sm">
-              <img src="./static/img/SD.jpeg" class="img-fluid rounded" />
-              <div class="tech-label mt-2">SOFTWARE DEVELOPER</div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="tech-card text-center p-3 shadow-sm">
-              <img src="./static/img/python.jpeg" class="img-fluid rounded" />
-              <div class="tech-label mt-2">PYTHON</div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="tech-card text-center p-3 shadow-sm">
-              <img src="./static/img/java.jpeg" class="img-fluid rounded" />
-              <div class="tech-label mt-2">JAVA</div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="tech-card text-center p-3 shadow-sm">
-              <img src="./static/img/node.jpeg" class="img-fluid rounded" />
-              <div class="tech-label mt-2">NODE.JS</div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="tech-card text-center p-3 shadow-sm">
-              <img src="./static/img/php.jpeg" class="img-fluid rounded" />
-              <div class="tech-label mt-2">PHP</div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="tech-card text-center p-3 shadow-sm">
-              <img src="./static/img/react.jpeg" class="img-fluid rounded" />
-              <div class="tech-label mt-2">REACT.JS</div>
-            </div>
-          </div>
+  <!-- TECHNOLOGY -->
+  <section id="tech" class="tech-section">
+    <h2 class="tech-title">Technology</h2>
+    <div class="tech-cards">
+        <!-- Card 1 -->
+        <div class="tech-card">
+            <img src="./static/img/SD.jpeg" >
+            <div class="tech-label">SOFTEWARE DEVELOPER</div>
         </div>
-      </div>
-    </section>
-    <!-- PROJECT -->
-
-    <!-- CONTACT US -->
-    <section id="contact" class="py-5">
-      <h2 class="text-center fw-bold mb-4">Contact Us</h2>
-
-      <div class="row g-4 justify-content-center">
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="card text-center p-4 shadow contact-card">
-            <i class="fas fa-map-marked-alt fa-2x mb-3"></i>
-            <h4>Address</h4>
-            <p>
-              No.20/A, 5th Street, 1st floor, Janagi Nagar, Maduravoyal, Chennai
-              600 040.
-            </p>
-          </div>
+        <!-- Card 3 -->
+        <div class="tech-card">
+            <img src="./static/img/python.jpeg" >
+            <div class="tech-label">PYTHON</div>
         </div>
-
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="card text-center p-4 shadow contact-card">
-            <i class="fas fa-envelope fa-2x mb-3"></i>
-            <h4>Email Us</h4>
-            <p>UTechinfo@gmail.com</p>
-          </div>
+        <!-- Card 4 -->
+        <div class="tech-card">
+            <img src="./static/img/java.jpeg" >
+            <div class="tech-label">JAVA</div>
         </div>
+        <!-- Card 5 -->
+        <div class="tech-card">
+            <img src="./static/img/node.jpeg" >
+            <div class="tech-label">NODE.JS</div>
+        </div>
+        <!-- Card 6 -->
+        <div class="tech-card">
+            <img src="./static/img/php.jpeg">
+            <div class="tech-label">PHP</div>
+        </div>
+        <!-- Card 7 -->
+        <div class="tech-card">
+            <img src="./static/img/react.jpeg">
+            <div class="tech-label">REACT.JS</div>
+        </div>               
+    </div>
+  </section>
+<!-- PROJECT -->
 
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="card text-center p-4 shadow contact-card">
-            <i class="fas fa-phone-alt fa-2x mb-3"></i>
-            <h4>Call Us</h4>
+
+<!-- CONTACT US -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-cards">
+        <div class="contact-card">
+            <div class="icon-box">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <h3>Address</h3>
+            <p>No.20/A, 5th Street, 1st floor<br/>
+            Janagi Nagar,Maduravoyal,<br>
+            Chennai 600 040.</p>
+        </div>
+        <div class="contact-card">
+            <div class="icon-box">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>UTechinfo@gmail.com<p>
+        </div>
+        <div class="contact-card">
+            <div class="icon-box">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Call Us</h3>
             <p>+91 63827 90456</p>
-          </div>
         </div>
-      </div>
-    </section>
-    <br />
-    <!-- FontAwesome for icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
-
-    <!-- MAP AND FROM  Section -->
-    <div class="contact-container">
-      <div class="map-box">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.116124929299!2d80.2092915!3d13.0826802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265a79bc1e1a7%3A0x3ed974d1b0c3df6b!2sChennai!5e0!3m2!1sen!2sin!4v1700000000000"
-          width="100%"
-          height="100%"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
-      </div>
-      <br />
-      <div class="contact-form">
-        <center><h2>Get In Touch</h2></center>
-        <form method="POST">
-          <label>Name</label>
-          <input type="text" name="name" required />
-          <label>Phone</label>
-          <input type="number" name="phone" required />
-          <label>Email</label>
-          <input type="email" name="email" required />
-          <label>Message</label>
-          <textarea name="msg" rows="4" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+    </div>
+  </section><br/>
+<!-- FontAwesome for icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+<!-- MAP AND FROM  Section -->  
+  <div class="contact-container">
+  <div class="map-box">
+  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.116124929299!2d80.2092915!3d13.0826802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265a79bc1e1a7%3A0x3ed974d1b0c3df6b!2sChennai!5e0!3m2!1sen!2sin!4v1700000000000"
+  width="100%" height="100%" style="border:0;" 
+  allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </div><br/>
+  <div class="contact-form">
+    <center><h2>Get In Touch</h2></center>
+    <form method="POST">
+      <label>Name</label>
+      <input type="text" name="name" required />
+      <label>Phone</label>
+      <input type="number" name="phone" required />
+      <label>Email</label>
+      <input type="email" name="email" required />
+      <label>Message</label>
+      <textarea name="msg" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  </div>
+  <br/>
+<!-- FOOTER SECTION -->
+  <footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#tech">Technology</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="/feedback/">Feedback</a></li>
+      </ul>
+    </div>
+    <div class="footer-about" id="about">
+      <h3>About Us</h3>
+      <p>
+        UTech Info is a student-focused IT solutions company based in Chennai, Tamil Nadu. 
+        We specialize in developing high-quality Final Year Academic Projects for Engineering 
+        (CSE, IT, ECE), BCA, MCA, B.Sc (CS), Diploma, and Management students.
+      </p>
+    </div>
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Address: <a>No.20/A, 5th Street, 1st floor<br/>Janagi Nagar,Maduravoyal,<br>Chennai 600 040.</a></p>
+      <p>Email: <a href="mailto:utechinfo@gmail.com" target="_blank"> UTechInfo@gmail.com</a></p>
+      <p>Phone: <a href="tel:6382790456" target="_blank">+91 63827 90456</p></a>
+      <div class="social-icons">
+        <a href="" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+        <a href="" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="" class="youtube" target="_blank"><i class="bx bxl-youtube"></i></a>
       </div>
     </div>
-    <br />
-    <!-- FOOTER SECTION -->
-    <footer class="footer" id="contact">
-      <div class="container">
-        <div
-          class="footer-container row justify-content-between text-center text-md-start"
-        >
-          <!-- Quick Links -->
-          <div class="footer-links col-12 col-md-4 col-lg-4 mb-4">
-            <h3>Quick Links</h3>
-            <ul class="list-unstyled">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#tech">Technology</a></li>
-              <li><a href="#project">Project</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li><a href="/feedback/">Feedback</a></li>
-            </ul>
-          </div>
-
-          <!-- About Us -->
-          <div class="footer-about col-12 col-md-4 col-lg-4 mb-4">
-            <h3>About Us</h3>
-            <p>
-              UTech Info is a student-focused IT solutions company based in
-              Chennai, Tamil Nadu. We specialize in developing high-quality
-              Final Year Academic Projects for Engineering (CSE, IT, ECE), BCA,
-              MCA, B.Sc (CS), Diploma, and Management students.
-            </p>
-          </div>
-
-          <!-- Contact -->
-          <div class="footer-contact col-12 col-md-4 col-lg-4 mb-4">
-            <h3>Contact</h3>
-            <p>
-              Address: No.20/A, 5th Street, 1st floor<br />Janagi Nagar,
-              Maduravoyal,<br />Chennai 600 040.
-            </p>
-            <p>
-              Email:
-              <a href="mailto:UTechInfo@gmail.com">UTechInfo@gmail.com</a>
-            </p>
-            <p>Phone: <a href="tel:6382790456">+91 63827 90456</a></p>
-
-            <div class="social-icons mt-2">
-              <a href="#" class="mx-2"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="mx-2"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="mx-2"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="mx-2"><i class="bx bxl-linkedin"></i></a>
-              <a href="#" class="mx-2"><i class="bx bxl-youtube"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom text-center mt-3">
-          <p>Copyrights © 2025 UTech Info. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-  </body>
+  </div>
+  <div class="footer-bottom">
+    <p>Copyrights © 2025 UTech Info. All rights reserved.</p>
+  </div>
+  </footer>
+ </body>
   <script>
-    function openWhatsApp() {
-      let phone = "6382790456";
-      let msg = "I NEED FINAL YEAR PROJECT.";
-      let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
-      window.open(url, "_blank");
-    }
+  function openWhatsApp() {
+  let phone = "6382790456";
+  let msg = "I NEED FINAL YEAR PROJECT."; 
+  let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
+  window.open(url, "_blank");
+}
   </script>
 </html>

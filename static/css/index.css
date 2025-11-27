@@ -100,7 +100,7 @@ body {
   text-shadow: 2px 2px 4px black;
   letter-spacing: 1px;
 }
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .tech-cards {
     grid-template-columns: 1fr;
   }
@@ -121,7 +121,7 @@ body {
   .tech-card img {
     height: 200px;
   }
-} */
+}
 /* ---------     PROJECT    --------------*/
 
 /* ---------     CONTACT US    --------------*/
@@ -388,51 +388,5 @@ input:hover {
   }
   .footer-links ul li {
     margin: 5px 0;
-  }
-}
-/* ----------- -----------* /
-/* TECHNOLOGY SECTION RESPONSIVE FIX */
-.tech-cards {
-  width: 95%;
-  margin: auto;
-  display: grid;
-  gap: 25px;
-}
-
-/* Mobile – 1 column (one image per row) */
-@media (max-width: 768px) {
-  .tech-cards {
-    grid-template-columns: 1fr !important;
-  }
-
-  .tech-card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  /* Center title lines */
-  .tech-title:before {
-    left: 28%;
-  }
-  .tech-title:after {
-    right: 28%;
-  }
-}
-
-/* Tablet – 2 columns */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .tech-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Laptop/Desktop – 3 columns */
-@media (min-width: 1025px) {
-  .tech-cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .tech-card img {
-    height: 220px;
   }
 }
