@@ -365,46 +365,29 @@ input:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 14px;
 }
-/* FOOTER MOBILE RESPONSIVE */
 @media (max-width: 768px) {
   .footer-container {
-    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 25px;
     text-align: center;
-    margin: auto;
+    gap: 20px;
   }
-
   .footer-links,
   .footer-about,
   .footer-contact {
     width: 100%;
     margin: 0;
-    padding: 0 10px;
+    align-items: center;
+    text-align: center;
   }
-
   .footer-links ul,
   .footer-contact ul {
     padding: 0;
     list-style: none;
   }
-
-  .footer-links ul li,
-  .footer-contact p,
-  .footer-about p {
-    margin-bottom: 8px;
-  }
-
-  .social-icons a {
-    margin: 0 10px;
-  }
-
-  .footer-bottom {
-    margin-top: 15px;
-    text-align: center;
+  .footer-links ul li {
+    margin: 5px 0;
   }
 }
 /* ----------- -----------* /
