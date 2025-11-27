@@ -1,104 +1,153 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Contact Form</title>
-
-    <!-- Internal CSS -->
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: #f5f5f5;
-        padding: 20px;
-        margin: 0;
-      }
-
-      h2 {
-        text-align: center;
-        color: #333;
-      }
-
-      form {
-        width: 350px;
-        margin: auto;
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-      label {
-        font-weight: bold;
-      }
-
-      input,
-      textarea {
-        width: 90%;
-        padding: 10px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 15px;
-      }
-
-      button {
-        width: 100%;
-        padding: 12px;
-        background: #007bff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 17px;
-        cursor: pointer;
-      }
-
-      button:hover {
-        background: #0056b3;
-      }
-
-      /* ------- Mobile Responsive CSS ------- */
-      @media (max-width: 480px) {
-        form {
-          width: 100%;
-          margin: 0;
-          padding: 15px;
-          border-radius: 0;
-          box-shadow: none;
-        }
-
-        body {
-          padding: 10px;
-        }
-
-        button {
-          font-size: 16px;
-          padding: 10px;
-        }
-      }
-    </style>
+    <title>UTech Info</title>
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
   </head>
-
   <body>
-    <h2>Contact Form</h2>
+  <button class="whatsapp-btn"  onclick="openWhatsApp()">Chat To Whatsapp</button>
+  <!-- HOME -->
 
+  <!-- ABOUT -->
+
+  <!-- TECHNOLOGY -->
+  <section id="tech" class="tech-section">
+    <h2 class="tech-title">Technology</h2>
+    <div class="tech-cards">
+        <!-- Card 1 -->
+        <div class="tech-card">
+            <img src="./static/img/SD.jpeg" >
+            <div class="tech-label">SOFTEWARE DEVELOPER</div>
+        </div>
+        <!-- Card 3 -->
+        <div class="tech-card">
+            <img src="./static/img/python.jpeg" >
+            <div class="tech-label">PYTHON</div>
+        </div>
+        <!-- Card 4 -->
+        <div class="tech-card">
+            <img src="./static/img/java.jpeg" >
+            <div class="tech-label">JAVA</div>
+        </div>
+        <!-- Card 5 -->
+        <div class="tech-card">
+            <img src="./static/img/node.jpeg" >
+            <div class="tech-label">NODE.JS</div>
+        </div>
+        <!-- Card 6 -->
+        <div class="tech-card">
+            <img src="./static/img/php.jpeg">
+            <div class="tech-label">PHP</div>
+        </div>
+        <!-- Card 7 -->
+        <div class="tech-card">
+            <img src="./static/img/react.jpeg">
+            <div class="tech-label">REACT.JS</div>
+        </div>               
+    </div>
+  </section>
+<!-- PROJECT -->
+
+
+<!-- CONTACT US -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-cards">
+        <div class="contact-card">
+            <div class="icon-box">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <h3>Address</h3>
+            <p>No.20/A, 5th Street, 1st floor<br/>
+            Janagi Nagar,Maduravoyal,<br>
+            Chennai 600 040.</p>
+        </div>
+        <div class="contact-card">
+            <div class="icon-box">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>UTechinfo@gmail.com<p>
+        </div>
+        <div class="contact-card">
+            <div class="icon-box">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>+91 63827 90456</p>
+        </div>
+    </div>
+  </section><br/>
+<!-- FontAwesome for icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+<!-- MAP AND FROM  Section -->  
+  <div class="contact-container">
+  <div class="map-box">
+  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.116124929299!2d80.2092915!3d13.0826802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265a79bc1e1a7%3A0x3ed974d1b0c3df6b!2sChennai!5e0!3m2!1sen!2sin!4v1700000000000"
+  width="100%" height="100%" style="border:0;" 
+  allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </div><br/>
+  <div class="contact-form">
+    <center><h2>Get In Touch</h2></center>
     <form method="POST">
       <label>Name</label>
       <input type="text" name="name" required />
-
       <label>Phone</label>
-      <input type="text" name="phone" required />
-
+      <input type="number" name="phone" required />
       <label>Email</label>
       <input type="email" name="email" required />
-
       <label>Message</label>
       <textarea name="msg" rows="4" required></textarea>
-
       <button type="submit">Send Message</button>
     </form>
-    <br/>
-<button onclick="openWhatsApp()">Chat To Whatsapp</button>
-  </body>
+  </div>
+  </div>
+  <br/>
+<!-- FOOTER SECTION -->
+  <footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#tech">Technology</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="/feedback/">Feedback</a></li>
+      </ul>
+    </div>
+    <div class="footer-about" id="about">
+      <h3>About Us</h3>
+      <p>
+        UTech Info is a student-focused IT solutions company based in Chennai, Tamil Nadu. 
+        We specialize in developing high-quality Final Year Academic Projects for Engineering 
+        (CSE, IT, ECE), BCA, MCA, B.Sc (CS), Diploma, and Management students.
+      </p>
+    </div>
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Address: <a>No.20/A, 5th Street, 1st floor<br/>Janagi Nagar,Maduravoyal,<br>Chennai 600 040.</a></p>
+      <p>Email: <a href="mailto:utechinfo@gmail.com" target="_blank"> UTechInfo@gmail.com</a></p>
+      <p>Phone: <a href="tel:6382790456" target="_blank">+91 63827 90456</p></a>
+      <div class="social-icons">
+        <a href="" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+        <a href="" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="" class="youtube" target="_blank"><i class="bx bxl-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Copyrights © 2025 UTech Info. All rights reserved.</p>
+  </div>
+  </footer>
+ </body>
   <script>
   function openWhatsApp() {
   let phone = "6382790456";

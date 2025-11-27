@@ -19,7 +19,6 @@ def home():
         phone = request.form.get('phone')
         email = request.form.get('email')
         msg = request.form.get('msg')
-
         data = {
             "name": name,
             "phone": phone,
@@ -31,7 +30,7 @@ def home():
         message_body = f"Name: {name}\nPhone: {phone}\nEmail: {email}\nMessage:\n{msg}"
         msg_obj = Message(
             subject=f"New Contact Form Submission from {name}",
-            sender=email,
+            sender=("website contact",email),
             recipients=["ruthiramoorthi4204@gmail.com"],
             body=message_body
         )
