@@ -50,3 +50,53 @@ document
   .addEventListener("click", function () {
     this.classList.toggle("active");
   });
+
+// JavaScript for slider functionality and other interactions
+document.addEventListener("DOMContentLoaded", function () {
+  // Image Slider
+  const slides = document.querySelectorAll(".slide");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
+  let currentSlide = 0;
+
+  function showSlide(n) {
+    slides.forEach((slide) => slide.classList.remove("active"));
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].classList.add("active");
+  }
+
+  prevBtn.addEventListener("click", () => showSlide(currentSlide - 1));
+  nextBtn.addEventListener("click", () => showSlide(currentSlide + 1));
+
+  // Auto slide every 5 seconds
+  setInterval(() => showSlide(currentSlide + 1), 5000);
+
+  // Feedback Slider
+  const feedbackSlides = document.querySelectorAll(".feedback-slide");
+  let currentFeedbackSlide = 0;
+
+  function showFeedbackSlide(n) {
+    feedbackSlides.forEach((slide) => slide.classList.remove("active"));
+    currentFeedbackSlide = (n + feedbackSlides.length) % feedbackSlides.length;
+    feedbackSlides[currentFeedbackSlide].classList.add("active");
+  }
+
+  // Auto change feedback every 7 seconds
+  setInterval(() => showFeedbackSlide(currentFeedbackSlide + 1), 7000);
+
+  // Form submission
+  const contactForm = document.querySelector("#contactForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      // Add your form submission logic here
+      alert("Thank you for your message! We will get back to you soon.");
+      this.reset();
+    });
+  }
+
+  // Loading animation
+  window.addEventListener("load", function () {
+    document.body.classList.add("loaded");
+  });
+});
