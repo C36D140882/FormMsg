@@ -44,3 +44,10 @@ function showFeedback() {
 
 setInterval(showFeedback, 3000);
 showFeedback();
+
+
+
+
+document.querySelector(".navbar-toggler").addEventListener("click", function () {
+  this.classList.toggle("active");
+});
